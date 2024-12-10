@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-segundaria: #f6f6f6;
+    --cor-terciara: #39FF14;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria:  "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 8%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciara);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciara);
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    padding: 10% 0%;
+    
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.apresentacao__links__link__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.apresentacao__links__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--cor-segundaria);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #39FF14;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.linkedin-icon,
+.github-icon {
+    width: 40px; 
+    height: 40px; 
+    filter: brightness(0) saturate(100%) invert(60%) sepia(98%) saturate(5500%) hue-rotate(76deg) brightness(115%) contrast(103%);
+    border-radius: 50%; 
+    padding: 5px; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minha__imagem {
+    width: 500px;
+    height: auto;
+    border-radius: 18px;
+    margin-left: 20px;
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--cor-terciara);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+}
